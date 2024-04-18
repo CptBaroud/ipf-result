@@ -60,4 +60,17 @@ const filteredData = computed(() => {
 
   return Object.values(out);
 });
+
+useHead({
+  title: `ASBR - Resultats comp`,
+});
+
+useSeoMeta({
+  title: `ASBR - Resultats comp`,
+  ogTitle: `ASBR - Resultats comp`,
+  ogType: "article",
+  description: "Résultats de compétition des athlètes de l'ASBR",
+  ogDescription: "Résultats de compétition des athlètes de l'ASBR",
+  twitterCard: "summary_large_image",
+});
 </script>

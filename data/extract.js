@@ -83,7 +83,13 @@ const updateLocales = async () => {
     "Antoine Martin",
     "Xavier Piard",
     "Raphael Tenaud",
-    "Elise Garreau"
+    "Elise Garreau",
+    "Jérémy Paris",
+    "Louis Hitier",
+    "Lenaïg Celle",
+    "Alexandre Leray",
+    "Benoit Brossaud",
+    "Justin Jouanneau"
   ]
 
   const ASBRDataOnly = FrenchDataOnly.filter((item) => {
