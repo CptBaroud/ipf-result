@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Thunder";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(~/assets/fonts/thunder/Thunder-LightLC.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Thunder";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(~/assets/fonts/thunder/Thunder-ExtraLightLC.otf) format("opentype");
+  }
+
+  @font-face {
+    font-family: "Thunder";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(~/assets/fonts/thunder/Thunder-LightLC.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Thunder";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(~/assets/fonts/thunder/Thunder-LC.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Thunder";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src:  url(~/assets/fonts/thunder/Thunder-MediumLC.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Thunder";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src:  url(~/assets/fonts/thunder/Thunder-SemiBoldLC.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Thunder";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:  url(~/assets/fonts/thunder/Thunder-BoldLC.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Thunder";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src:  url(~/assets/fonts/thunder/Thunder-ExtraBoldLC.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Thunder";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src:  url(~/assets/fonts/thunder/Thunder-BlackLC.otf) format("opentype");
+  }
+  
+  
+}
+
+@layer components {
+  footer,
+  section {
+    @apply mx-auto px-[1.5rem] py-16 sm:px-[1rem] lg:px-[3.5rem] lg:pb-24
+          lg:pt-16 
+          xl:px-[5.5rem] 
+          2xl:px-[15rem];
+  }
+
+  .container {
+    @apply mx-auto flex max-w-[1200px] flex-col items-center lg:flex-row;
+  }
+}
