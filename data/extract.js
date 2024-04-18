@@ -69,7 +69,7 @@ const updateLocales = async () => {
 
   const ASBRMember = [
     'Gurvan Seveno',
-    'François Biron',
+    'Francois Biron',
     "Corentin Piard",
     "Eva Gentilhomme",
     "Clara Lucas",
