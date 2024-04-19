@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <div class="py-32 w-full flex flex-col items-center gap-8">
+    <div v-else class="py-32 w-full flex flex-col items-center gap-8">
       <h1 class="text-3xl font-medium">Un problème est survenu</h1>
       <nuxt-link class="py-2 px-3 text-xl font-bold text-white bg-gradient-blue/70 rounded-lg" to="/">
         Retour
