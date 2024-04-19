@@ -19,6 +19,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Thunder, sans-serif"],
+      'display': ['Montserrat, sans-serif'],
     },
     extend: {
       rotate: {
