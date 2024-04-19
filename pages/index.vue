@@ -1,25 +1,44 @@
 <template>
-
-  <section class="relative">
-    <div
-    class="absolute top-0 -left-[30rem] text-white overflow-hidden overflow-y-hidden max-h-full"
+  <div
+    class="absolute z-0 -top-[10rem] -left-[45rem] text-white overflow-hidden overflow-y-hidden max-h-full"
   >
     <p
-      v-for="i in 32"
+      v-for="i in bgTextCount"
+      unselectable="on"
       :key="i"
       class="w-full text-[32rem] leading-none font-black text-transparent opacity-[.07] -mb-24 whitespace-nowrap"
-      :style="`margin-left : -${Math.floor(Math.random() * 77)}rem`"
-      style="text-stroke: 4px white; -webkit-text-stroke: 4px white"
+      :style="`margin-left : -${bgTextData[i]}rem`"
+      style="
+        text-stroke: 4px white;
+        -webkit-text-stroke: 4px white;
+        user-select: none;
+      "
     >
       ABSR - RESULTS - ASBR
     </p>
   </div>
-    <div class="container flex-col">
-      <ul
-        class="w-full relative grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-4 lg:gap-8 py-8 lg:py-24"
+
+  <section class="w-full pt-32 pb-4">
+    <div class="container">
+      <input
+        v-model="search"
+        class="py-3 px-6 my-8 w-full text-white rounded-xl border-2 foxus;:border-gradient-blue bg-transparent border-gradient-white bg-gradient-to-r from-gradient-dark/40 to-gradient-white/40 z-20 font-display text-xl"
+        placeholder="Nom de l'athlète"
+        style="backdrop-filter: blur(6px)"
+      />
+    </div>
+  </section>
+
+  <section class="relative pt-4">
+    <div class="container flex-col min-h-[80vh]">
+      <transition-group
+        class="w-full relative grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-4 lg:gap-8"
+        name="list"
+        tag="ul"
       >
-        <li v-for="item in data" :key="item.name">
+        <li v-for="item in filteredList" :key="item.name">
           <resultsCard
+            :style="`--delay: ${i * 5}ms`"
             :Name="item.Name"
             :Division="item.Division"
             :WeightClassKg="item.WeightClassKg"
@@ -31,7 +50,7 @@
             :MeetName="item.MeetName"
           />
         </li>
-      </ul>
+      </transition-group>
     </div>
   </section>
 </template>
@@ -41,6 +60,17 @@ const { data } = await useAsyncData("index-data", async () => {
   const item = await queryContent("/").findOne();
 
   return item.body;
+});
+
+const search = ref("");
+const bgTextCount = ref(32);
+
+const filteredList = computed(() => {
+  const searchRegexp = new RegExp(search.value.toLowerCase());
+
+  return data.value.filter((d) => {
+    return searchRegexp.test(d.Name.toLowerCase());
+  });
 });
 
 useHead({
@@ -55,4 +85,30 @@ useSeoMeta({
   ogDescription: "Résultats de compétition des athlètes de l'ASBR",
   twitterCard: "summary_large_image",
 });
+
+const bgTextData = computed(() => {
+  const pos = [];
+  for (let i = 0; i < bgTextCount.value; i++) {
+    pos.push(Math.floor(Math.random() * 77));
+  }
+  return pos;
+});
 </script>
+
+<style scoped>
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+}
+
+.list-leave-from,
+.list-enter-to {
+  opacity: 1;
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: opacity 300ms;
+  transition-delay: var(--delay);
+}
+</style>
