@@ -1,6 +1,6 @@
 <template>
   <div
-    class="z-10 flex flex-col xl:flex-row gap-4 xl:gap-32 justify-between font-thunder rounded-xl text-white p-2 xl:p-4 bg-gradient-to-b xl:bg-gradient-to-r border-2"
+    class="z-10 flex flex-col xl:flex-row gap-4 xl:gap-32 justify-between font-thunder rounded-xl text-white p-2 xl:p-4 bg-gradient-to-b xl:bg-gradient-to-r border-2 max-w-[550px]"
     :class="bg"
     style="backdrop-filter: blur(6px)"
   >

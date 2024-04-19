@@ -9,7 +9,7 @@
       :key="i"
       class="w-full text-[32rem] leading-none font-black text-transparent opacity-[.07] -mb-24 whitespace-nowrap"
       :style="`margin-left : -${Math.floor(Math.random() * 77)}rem`"
-      style="text-stroke: 4px white;"
+      style="text-stroke: 4px white; -webkit-text-stroke: 4px white"
     >
       ABSR - RESULTS - ASBR
     </p>
@@ -28,6 +28,7 @@
             :BestDeadliftKg="item.Best3DeadliftKg"
             :TotalKg="item.TotalKg"
             :Dots="item.Dots"
+            :MeetName="item.MeetName"
           />
         </li>
       </ul>
