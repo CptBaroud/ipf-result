@@ -6,11 +6,11 @@
       v-for="i in bgTextCount"
       unselectable="on"
       :key="i"
-      class="w-full text-[32rem] leading-none font-black text-transparent opacity-[.07] -mb-24 whitespace-nowrap"
+      class="w-full text-[32rem] leading-none font-black text-transparent opacity-[.07] -mb-24 whitespace-nowrap tracking-wide"
       :style="`margin-left : -${bgTextData[i]}rem`"
       style="
         text-stroke: 4px white;
-        -webkit-text-stroke: 4px white;
+        -webkit-text-stroke: 3px rgba(255,255,255, 0.38);
         user-select: none;
       "
     >
@@ -22,14 +22,14 @@
     <div class="container">
       <input
         v-model="search"
-        class="py-3 px-6 my-8 w-full text-white rounded-xl border-2 foxus;:border-gradient-blue bg-transparent border-gradient-white bg-gradient-to-r from-gradient-dark/40 to-gradient-white/40 z-20 font-display text-xl"
+        class="py-3 px-6 my-8 w-full text-white rounded-xl border-2 foxus:border-gradient-blue bg-transparent border-gradient-white bg-gradient-to-r from-gradient-dark/40 to-gradient-white/40 z-20 font-display text-xl"
         placeholder="Nom de l'athlète"
         style="backdrop-filter: blur(6px)"
       />
     </div>
   </section>
 
-  <section class="relative pt-4">
+  <section class="w-full relative pt-4">
     <div class="container flex-col min-h-[80vh]">
       <transition-group
         class="w-full relative grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-4 lg:gap-8"
@@ -37,7 +37,7 @@
         tag="ul"
       >
         <li v-for="item in filteredList" :key="item.name">
-          <resultsCard
+          <resultsTotal
             :style="`--delay: ${i * 5}ms`"
             :Name="item.Name"
             :Division="item.Division"

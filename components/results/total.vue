@@ -1,19 +1,19 @@
 <template>
   <NuxtLink
-    class="z-10 flex flex-col xl:flex-row gap-4 xl:gap-32 justify-between font-thunder rounded-xl text-white p-2 xl:p-4 bg-gradient-to-b xl:bg-gradient-to-r border-2 max-w-[550px]"
+    class="z-10 flex flex-col xl:flex-row justify-between font-thunder rounded-xl text-white p-2 xl:p-4 bg-gradient-to-b xl:bg-gradient-to-r border-2"
     :class="bg"
     style="backdrop-filter: blur(6px)"
     :to="`/user/${Name.replace(' ', '-').toLocaleLowerCase()}`"
   >
-    <div class="flex flex-col justify-between">
-      <span class="text-4xl xl:text-5xl font-bold">
-        {{ name.prenom }} <span class="uppercase">{{ name.nom }}</span>
+    <div class="flex flex-col gap-y-3 justify-between">
+      <span class="text-4xl xl:text-5xl font-bold uppercase ">
+        {{  Name }}
       </span>
-      <span class="text-8xl xl:text-9xl leading-none -mb-4 xl:-mb-6 font-black">
+      <span class="capsizedText font-black">
         {{ TotalKg }}<span class="uppercase font-medium text-2xl">kg</span>
       </span>
       <span
-        class="text-3xl xl:text-4xl text-white/72 font-bold xl:font-extrabold"
+        class="text-3xl xl:text-4xl text-white/72 font-bold xl:font-extrabold -mb-2"
       >
         <span>-{{ WeightClassKg }}KG</span>
         <span class="uppercase font-medium text-white text-xs xl:text-xl">{{
@@ -34,7 +34,7 @@
           >{{ BestBenchKg }}</span
         >
       </li>
-      <li class="text-md xl:text-base uppercase font-thin">
+      <li class="text-md xl:text-base uppercase font-thin -mb-2">
         terre <br class="xl:hidden" /><span
           class="text-6xl font-semibold xl:font-bold"
           >{{ BestDeadliftKg }}</span
@@ -76,12 +76,24 @@ const bg = computed(() => {
   return bgGradients[random];
 });
 
-const name = computed(() => {
-  const split = props.Name.split(" ");
-
-  return {
-    prenom: split[0],
-    nom: split[1],
-  };
-});
 </script>
+
+
+<style scoped>
+.capsizedText {
+  font-size: 120px;
+  line-height: 84px;
+}
+
+.capsizedText::before {
+  content: "";
+  margin-bottom: 0.09em;
+  display: table;
+}
+
+.capsizedText::after {
+  content: "";
+  margin-top: -0.09em;
+  display: table;
+}
+</style>

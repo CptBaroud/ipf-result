@@ -157,10 +157,10 @@
     @apply mx-auto px-[1.5rem] py-16 sm:px-[1rem] lg:px-[3.5rem] lg:pb-24
           lg:pt-16 
           xl:px-[5.5rem] 
-          2xl:px-[15rem];
+          2xl:px-[16rem];
   }
 
   .container {
-    @apply mx-auto flex max-w-[1200px] flex-col items-center lg:flex-row;
+    @apply mx-auto flex max-w-[1000px] flex-col items-center lg:flex-row;
   }
 }
