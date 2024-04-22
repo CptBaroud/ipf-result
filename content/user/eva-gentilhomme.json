@@ -1,4 +1,7 @@
 {
+  "name": "eva-gentilhomme",
+  "division": "Seniors",
+  "weightClas": "76",
   "comps": [
     {
       "Name": "Eva Gentilhomme",
@@ -15,17 +18,17 @@
       "Squat2Kg": "102.5",
       "Squat3Kg": "107.5",
       "Squat4Kg": "",
-      "Best3SquatKg": "107.5",
+      "Best3SquatKg": 107.5,
       "Bench1Kg": "-47.5",
       "Bench2Kg": "50",
       "Bench3Kg": "-55",
       "Bench4Kg": "",
-      "Best3BenchKg": "50",
+      "Best3BenchKg": 50,
       "Deadlift1Kg": "110",
       "Deadlift2Kg": "120",
       "Deadlift3Kg": "130",
       "Deadlift4Kg": "",
-      "Best3DeadliftKg": "130",
+      "Best3DeadliftKg": 130,
       "TotalKg": "287.5",
       "Place": "2",
       "Dots": "283.93",

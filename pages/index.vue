@@ -18,8 +18,9 @@
     </p>
   </div>
 
-  <section class="w-full pt-32 pb-4">
-    <div class="container">
+  <section class="w-full pt-16 pb-4">
+    <div class="container flex flex-col items-start">
+      <h1 class="text-6xl md:text-9xl font-black">TOTAL</h1>
       <input
         v-model="search"
         class="py-3 px-6 my-8 w-full text-white rounded-xl border-2 foxus:border-gradient-blue bg-transparent border-gradient-white bg-gradient-to-r from-gradient-dark/40 to-gradient-white/40 z-20 font-display text-xl"
@@ -36,9 +37,10 @@
         name="list"
         tag="ul"
       >
-        <li v-for="item in filteredList" :key="item.name">
+        <li v-for="(item, i) in filteredList" :key="item.name">
           <resultsTotal
             :style="`--delay: ${i * 5}ms`"
+            :uid="item.uid"
             :Name="item.Name"
             :Division="item.Division"
             :WeightClassKg="item.WeightClassKg"
@@ -58,7 +60,6 @@
 <script setup>
 const { data } = await useAsyncData("index-data", async () => {
   const item = await queryContent("/").findOne();
-
   return item.body;
 });
 

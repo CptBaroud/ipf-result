@@ -1,4 +1,7 @@
 {
+  "name": "benoit-brossaud",
+  "division": "Seniors",
+  "weightClas": "105",
   "comps": [
     {
       "Name": "Benoît Brossaud",
@@ -15,17 +18,17 @@
       "Squat2Kg": "212.5",
       "Squat3Kg": "220",
       "Squat4Kg": "",
-      "Best3SquatKg": "220",
+      "Best3SquatKg": 220,
       "Bench1Kg": "140",
       "Bench2Kg": "150",
       "Bench3Kg": "-157.5",
       "Bench4Kg": "",
-      "Best3BenchKg": "150",
+      "Best3BenchKg": 150,
       "Deadlift1Kg": "210",
       "Deadlift2Kg": "222.5",
       "Deadlift3Kg": "230",
       "Deadlift4Kg": "",
-      "Best3DeadliftKg": "230",
+      "Best3DeadliftKg": 230,
       "TotalKg": "600",
       "Place": "3",
       "Dots": "363.87",

@@ -1,4 +1,7 @@
 {
+  "name": "kyllian-sicot",
+  "division": "Juniors",
+  "weightClas": "83",
   "comps": [
     {
       "Name": "Kyllian Sicot",
@@ -15,17 +18,17 @@
       "Squat2Kg": "192.5",
       "Squat3Kg": "200",
       "Squat4Kg": "",
-      "Best3SquatKg": "200",
+      "Best3SquatKg": 200,
       "Bench1Kg": "-130",
       "Bench2Kg": "-130",
       "Bench3Kg": "130",
       "Bench4Kg": "",
-      "Best3BenchKg": "130",
+      "Best3BenchKg": 130,
       "Deadlift1Kg": "192.5",
       "Deadlift2Kg": "202.5",
       "Deadlift3Kg": "210",
       "Deadlift4Kg": "",
-      "Best3DeadliftKg": "210",
+      "Best3DeadliftKg": 210,
       "TotalKg": "540",
       "Place": "5",
       "Dots": "379.00",

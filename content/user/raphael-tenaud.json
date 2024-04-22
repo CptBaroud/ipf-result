@@ -1,4 +1,7 @@
 {
+  "name": "raphael-tenaud",
+  "division": "Seniors",
+  "weightClas": "93",
   "comps": [
     {
       "Name": "Raphael Tenaud",
@@ -15,17 +18,17 @@
       "Squat2Kg": "-182.5",
       "Squat3Kg": "190",
       "Squat4Kg": "",
-      "Best3SquatKg": "190",
+      "Best3SquatKg": 190,
       "Bench1Kg": "117.5",
       "Bench2Kg": "125",
       "Bench3Kg": "-130",
       "Bench4Kg": "",
-      "Best3BenchKg": "125",
+      "Best3BenchKg": 125,
       "Deadlift1Kg": "200",
       "Deadlift2Kg": "-212.5",
       "Deadlift3Kg": "220",
       "Deadlift4Kg": "",
-      "Best3DeadliftKg": "220",
+      "Best3DeadliftKg": 220,
       "TotalKg": "535",
       "Place": "6",
       "Dots": "351.67",

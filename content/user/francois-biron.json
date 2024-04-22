@@ -1,4 +1,7 @@
 {
+  "name": "francois-biron",
+  "division": "Seniors",
+  "weightClas": "83",
   "comps": [
     {
       "Name": "Francois Biron",
@@ -15,17 +18,17 @@
       "Squat2Kg": "190",
       "Squat3Kg": "200",
       "Squat4Kg": "",
-      "Best3SquatKg": "200",
+      "Best3SquatKg": 200,
       "Bench1Kg": "125",
       "Bench2Kg": "130",
       "Bench3Kg": "-135",
       "Bench4Kg": "",
-      "Best3BenchKg": "130",
+      "Best3BenchKg": 130,
       "Deadlift1Kg": "225",
       "Deadlift2Kg": "-237.5",
       "Deadlift3Kg": "245",
       "Deadlift4Kg": "",
-      "Best3DeadliftKg": "245",
+      "Best3DeadliftKg": 245,
       "TotalKg": "575",
       "Place": "6",
       "Dots": "391.12",

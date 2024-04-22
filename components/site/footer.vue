@@ -6,7 +6,7 @@
         <a
         class="text-white/30"
         href="https://openpowerlifting.gitlab.io/opl-csv/bulk-csv.html"
-        >12/04/2024</a
+        >19/04/2024</a
         >
         depuis
         <a class="text-white/30" href="https://www.openipf.org/rankings/ipf"

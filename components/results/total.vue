@@ -3,7 +3,7 @@
     class="z-10 flex flex-col xl:flex-row justify-between font-thunder rounded-xl text-white p-2 xl:p-4 bg-gradient-to-b xl:bg-gradient-to-r border-2"
     :class="bg"
     style="backdrop-filter: blur(6px)"
-    :to="`/user/${Name.replace(' ', '-').toLocaleLowerCase()}`"
+    :to="`/user/${uid}`"
   >
     <div class="flex flex-col gap-y-3 justify-between">
       <span class="text-4xl xl:text-5xl font-bold uppercase ">
@@ -34,7 +34,7 @@
           >{{ BestBenchKg }}</span
         >
       </li>
-      <li class="text-md xl:text-base uppercase font-thin -mb-2">
+      <li class="text-md xl:text-base uppercase font-thin xlg-mb-2">
         terre <br class="xl:hidden" /><span
           class="text-6xl font-semibold xl:font-bold"
           >{{ BestDeadliftKg }}</span
@@ -46,6 +46,7 @@
 
 <script setup>
 const props = defineProps({
+  uid: String,
   Name: String,
   Division: String,
   WeightClassKg: String,

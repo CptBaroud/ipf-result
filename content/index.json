@@ -1,5 +1,6 @@
 [
   {
+    "uid": "lorna-remy",
     "Name": "Lorna Remy",
     "Sex": "F",
     "Event": "SBD",
@@ -44,6 +45,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "emma-poulailleau",
     "Name": "Emma Poulailleau",
     "Sex": "F",
     "Event": "SBD",
@@ -88,6 +90,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "clara-lucas",
     "Name": "Clara Lucas",
     "Sex": "F",
     "Event": "SBD",
@@ -132,6 +135,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "corentin-piard",
     "Name": "Corentin Piard",
     "Sex": "M",
     "Event": "SBD",
@@ -176,6 +180,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "xavier-piard",
     "Name": "Xavier Piard",
     "Sex": "M",
     "Event": "SBD",
@@ -220,6 +225,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "mickael-texier",
     "Name": "Mickael Texier",
     "Sex": "M",
     "Event": "SBD",
@@ -264,6 +270,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "jocelyn-cheruel",
     "Name": "Jocelyn Cheruel",
     "Sex": "M",
     "Event": "SBD",
@@ -308,6 +315,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "helene-jarry",
     "Name": "Hélène Jarry",
     "Sex": "F",
     "Event": "SBD",
@@ -352,6 +360,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "lenaig-celle",
     "Name": "Lenaïg Celle",
     "Sex": "F",
     "Event": "SBD",
@@ -396,6 +405,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "jeremy-paris",
     "Name": "Jérémy Paris",
     "Sex": "M",
     "Event": "SBD",
@@ -440,6 +450,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "justin-jouanneau",
     "Name": "Justin Jouanneau",
     "Sex": "M",
     "Event": "SBD",
@@ -484,6 +495,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "francois-biron",
     "Name": "Francois Biron",
     "Sex": "M",
     "Event": "SBD",
@@ -528,6 +540,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "hugo-carle",
     "Name": "Hugo Carle",
     "Sex": "M",
     "Event": "SBD",
@@ -572,6 +585,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "raphael-tenaud",
     "Name": "Raphael Tenaud",
     "Sex": "M",
     "Event": "SBD",
@@ -616,6 +630,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "benoit-brossaud",
     "Name": "Benoît Brossaud",
     "Sex": "M",
     "Event": "SBD",
@@ -660,6 +675,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "gurvan-seveno",
     "Name": "Gurvan Seveno",
     "Sex": "M",
     "Event": "SBD",
@@ -704,6 +720,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "alexandre-leray",
     "Name": "Alexandre Leray",
     "Sex": "M",
     "Event": "SBD",
@@ -748,6 +765,52 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "antoine-martin",
+    "Name": "Antoine Martin #1",
+    "Sex": "M",
+    "Event": "SBD",
+    "Equipment": "Raw",
+    "Age": "18.5",
+    "AgeClass": "18-19",
+    "BirthYearClass": "19-23",
+    "Division": "Juniors",
+    "BodyweightKg": "77.1",
+    "WeightClassKg": "83",
+    "Squat1Kg": "165",
+    "Squat2Kg": "175",
+    "Squat3Kg": "180",
+    "Squat4Kg": "",
+    "Best3SquatKg": "180",
+    "Bench1Kg": "117.5",
+    "Bench2Kg": "125",
+    "Bench3Kg": "130",
+    "Bench4Kg": "",
+    "Best3BenchKg": "130",
+    "Deadlift1Kg": "240",
+    "Deadlift2Kg": "255",
+    "Deadlift3Kg": "",
+    "Deadlift4Kg": "",
+    "Best3DeadliftKg": "255",
+    "TotalKg": "565",
+    "Place": "2",
+    "Dots": "398.37",
+    "Wilks": "395.08",
+    "Glossbrenner": "381.29",
+    "Goodlift": "81.21",
+    "Tested": "Yes",
+    "Country": "",
+    "State": "",
+    "Federation": "FFForce",
+    "ParentFederation": "IPF",
+    "Date": "2024-01-27",
+    "MeetCountry": "France",
+    "MeetState": "",
+    "MeetTown": "Saint-Joachim",
+    "MeetName": "Championnat Régional Femmes & Jeunes Hommes Ligérienne",
+    "Sanctioned": "Yes"
+  },
+  {
+    "uid": "kyllian-sicot",
     "Name": "Kyllian Sicot",
     "Sex": "M",
     "Event": "SBD",
@@ -792,6 +855,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "yann-le-liboux",
     "Name": "Yann Le Liboux",
     "Sex": "M",
     "Event": "SBD",
@@ -836,6 +900,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "nathan-garreau",
     "Name": "Nathan Garreau",
     "Sex": "M",
     "Event": "SBD",
@@ -880,6 +945,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "eva-gentilhomme",
     "Name": "Eva Gentilhomme",
     "Sex": "F",
     "Event": "SBD",
@@ -924,6 +990,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "raphael-martin",
     "Name": "Raphael Martin",
     "Sex": "M",
     "Event": "SBD",
@@ -968,6 +1035,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "paphop-poonkan",
     "Name": "Paphop Poonkan",
     "Sex": "M",
     "Event": "SBD",
@@ -1012,6 +1080,7 @@
     "Sanctioned": "Yes"
   },
   {
+    "uid": "louis-hitier",
     "Name": "Louis Hitier",
     "Sex": "M",
     "Event": "SBD",

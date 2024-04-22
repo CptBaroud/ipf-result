@@ -1,4 +1,7 @@
 {
+  "name": "paphop-poonkan",
+  "division": "Juniors",
+  "weightClas": "83",
   "comps": [
     {
       "Name": "Paphop Poonkan",
@@ -15,17 +18,17 @@
       "Squat2Kg": "165",
       "Squat3Kg": "175",
       "Squat4Kg": "",
-      "Best3SquatKg": "175",
+      "Best3SquatKg": 175,
       "Bench1Kg": "-112.5",
       "Bench2Kg": "120",
       "Bench3Kg": "127.5",
       "Bench4Kg": "",
-      "Best3BenchKg": "127.5",
+      "Best3BenchKg": 127.5,
       "Deadlift1Kg": "180",
       "Deadlift2Kg": "192.5",
       "Deadlift3Kg": "205",
       "Deadlift4Kg": "",
-      "Best3DeadliftKg": "205",
+      "Best3DeadliftKg": 205,
       "TotalKg": "507.5",
       "Place": "3",
       "Dots": "348.41",
