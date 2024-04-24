@@ -4,12 +4,12 @@
       <h2 class="text-white/75 text-lg">
         Donnée extraites du
         <a
-        class="text-white/30"
+        class="text-white/30" target="_blank"
         href="https://openpowerlifting.gitlab.io/opl-csv/bulk-csv.html"
         >19/04/2024</a
         >
         depuis
-        <a class="text-white/30" href="https://www.openipf.org/rankings/ipf"
+        <a class="text-white/30" target="_blank" href="https://www.openipf.org/rankings/ipf"
         >OpenIPF</a
         >
       </h2>

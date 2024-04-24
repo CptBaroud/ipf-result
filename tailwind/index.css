@@ -163,4 +163,26 @@
   .container {
     @apply mx-auto flex max-w-[1000px] flex-col items-center lg:flex-row;
   }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 70% !important;
+
+    &::before {
+      content: "";
+      margin-bottom: 0.09em;
+      display: table;
+    }
+    
+    &::after {
+      content: "";
+      margin-top: -0.09em;
+      display: table;
+    }
+  }
 }

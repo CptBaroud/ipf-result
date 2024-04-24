@@ -6,7 +6,7 @@
       v-for="i in bgTextCount"
       unselectable="on"
       :key="i"
-      class="w-full text-[32rem] leading-none font-black text-transparent opacity-[.07] -mb-24 whitespace-nowrap tracking-wide"
+      class="w-full text-[32rem] leading-none font-black text-transparent opacity-[.07] my-8 whitespace-nowrap tracking-wide"
       :style="`margin-left : -${bgTextData[i]}rem`"
       style="
         text-stroke: 4px white;

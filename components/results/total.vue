@@ -69,8 +69,8 @@ const bgGradients = {
 };
 
 const bg = computed(() => {
-  if (props.MeetName && props.MeetName.includes("Championnats de France")) {
-    return bgGradients["france"];
+  if (props.MeetName?.includes("Championnats de France")) {
+    return bgGradients.france;
   }
 
   const random = Math.floor(Math.random() * 4);

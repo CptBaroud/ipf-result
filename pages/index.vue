@@ -1,22 +1,5 @@
 <template>
-  <div
-    class="absolute z-0 -top-[10rem] -left-[45rem] text-white overflow-hidden overflow-y-hidden max-h-full"
-  >
-    <p
-      v-for="i in bgTextCount"
-      unselectable="on"
-      :key="i"
-      class="w-full text-[32rem] leading-none font-black text-transparent opacity-[.07] -mb-24 whitespace-nowrap tracking-wide"
-      :style="`margin-left : -${bgTextData[i]}rem`"
-      style="
-        text-stroke: 4px white;
-        -webkit-text-stroke: 3px rgba(255,255,255, 0.38);
-        user-select: none;
-      "
-    >
-      ABSR - RESULTS - ASBR
-    </p>
-  </div>
+  <DecorationTextBg text="ABSR - RESULTS - ASBR" />
 
   <section class="w-full pt-16 pb-4">
     <div class="container flex flex-col items-start">
@@ -75,12 +58,12 @@ const filteredList = computed(() => {
 });
 
 useHead({
-  title: `ASBR - Resultats comp`,
+  title: "ASBR - Resultats comp",
 });
 
 useSeoMeta({
-  title: `ASBR - Resultats comp`,
-  ogTitle: `ASBR - Resultats comp`,
+  title: "ASBR - Resultats comp",
+  ogTitle: "ASBR - Resultats comp",
   ogType: "article",
   description: "Résultats de compétition des athlètes de l'ASBR",
   ogDescription: "Résultats de compétition des athlètes de l'ASBR",

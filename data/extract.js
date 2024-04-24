@@ -1,12 +1,12 @@
-import path from "path";
-import fs from "fs";
-import fsPromise from "fs/promises";
+import path from "node:path";
+import fs from "node:fs";
+import fsPromise from "node:fs/promises";
 import fg from "fast-glob";
 import papa from "papaparse";
 
 const workingDir = process.cwd();
 
-const csvToJson = function (obj, key, value) {
+const csvToJson = (obj, key, value) => {
   if (key.length > 1) {
     if (!obj[key[0]]) {
       obj[key[0]] = {};
@@ -55,7 +55,7 @@ function cleanText(text) {
     .replace(/-+/g, "-") // Remove consecutive hyphens
 }
 
-const filterData = function (data) {
+const filterData = (data) => {
   const out = [];
 
   for (let i = 0; i < data.length; i++) {
@@ -186,8 +186,8 @@ const updateJsonFiles = async () => {
   console.log("Updating JSON file");
 
   const contentPath = path.join(workingDir, "content");
-  const fileContent = await fsPromise.readFile(`data/latest.csv`, "utf8");
-  const FrenchPath = path.join(contentPath, `french.json`);
+  const fileContent = await fsPromise.readFile("data/latest.csv", "utf8");
+  const FrenchPath = path.join(contentPath, "french.json");
 
   console.log("entry: data/latest.csv");
   const input = papa.parse(fileContent, {
@@ -213,20 +213,21 @@ const updateJsonFiles = async () => {
     return ASBRMember.includes(item.Name);
   });
 
-  console.log(`writing ASBR file...`);
+  console.log("writing ASBR file...");
   const index = filterData(ASBRDataOnly).map((item) => {
     return {
       uid: cleanText(item.Name),
       ...item
     }
   });
+  
   await fsPromise.writeFile(
     path.join(contentPath, "index.json"),
     JSON.stringify(index, null, 2),
     "utf-8"
   );
 
-  const userFiles = fg.sync([`**.json`], {
+  const userFiles = fg.sync(["**.json"], {
     cwd: path.join(workingDir, "content/user"),
   });
 
@@ -236,17 +237,17 @@ const updateJsonFiles = async () => {
 
   console.log("Processing personnal files");
   for (let i = 0; i < ASBRMember.length; i++) {
-    const item = ASBRMember[i];
-    const name = item.uid;
+    const item = ASBRMember[i]; // Nom de la personne
+    const name = cleanText(item);
 
-    let data = ASBRDataOnly.filter((data) => {
+    const data = ASBRDataOnly.filter((data) => {
       return data.Name === item;
     })
       .map((item) => {
 
-        const bestSquat = item.Best3SquatKg === '' ? 0 : parseFloat(item.Best3SquatKg);
-        const bestBench =item.Best3BenchKg === '' ? 0 : parseFloat(item.Best3BenchKg);
-        const bestTerre = item.Best3DeadliftKg === '' ? 0 : parseFloat(item.Best3DeadliftKg);
+        const bestSquat = item.Best3SquatKg === '' ? 0 : Number.parseFloat(item.Best3SquatKg);
+        const bestBench =item.Best3BenchKg === '' ? 0 : Number.parseFloat(item.Best3BenchKg);
+        const bestTerre = item.Best3DeadliftKg === '' ? 0 : Number.parseFloat(item.Best3DeadliftKg);
         
         return {
           ...item,
@@ -279,8 +280,8 @@ const updateJsonFiles = async () => {
   }
 
   await fsPromise.writeFile(
-    path.join(contentPath, `ranking.json`),
-    JSON.stringify({ data: ranking }, null, 2),
+    path.join(contentPath, "ranking.json"),
+    JSON.stringify({ ranking: ranking }, null, 2),
     "utf-8"
   );
 };
