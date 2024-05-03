@@ -83,21 +83,21 @@
       "weightClas": "66",
       "sex": "M",
       "squat": 182.5,
-      "bench": 100,
-      "deadlft": 195,
-      "total": 470,
-      "ipfPoint": 73.42
+      "bench": 102.5,
+      "deadlft": 217.5,
+      "total": 500,
+      "ipfPoint": 78.3
     },
     {
       "name": "Emma Poulailleau",
       "division": "Juniors",
       "weightClas": "57",
       "sex": "F",
-      "squat": 130,
+      "squat": 132.5,
       "bench": 65,
-      "deadlft": 135,
-      "total": 330,
-      "ipfPoint": 78.13
+      "deadlft": 137.5,
+      "total": 332.5,
+      "ipfPoint": 78.59
     },
     {
       "name": "Julien Abot",
@@ -269,9 +269,9 @@
       "division": "Juniors",
       "weightClas": "63",
       "sex": "F",
-      "squat": 155,
+      "squat": 160,
       "bench": 85,
-      "deadlft": 175,
+      "deadlft": 192.5,
       "total": 415,
       "ipfPoint": 93.74
     },
