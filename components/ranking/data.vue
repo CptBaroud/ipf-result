@@ -3,7 +3,11 @@
     <h3 class="text-6xl font-semibold pb-12 uppercase">{{  title }}</h3>
     <ul v-if="data.length !== 0">
       <li class="flex flex-row justify-between text-4xl font-regular" v-for="(item, i) in display" :key="i">
-        {{ item.name }} <span class="font-bold">{{ item[k] }}</span>
+        <span>
+          {{ item.name }} 
+          <span class="font-light text-sm">-{{ item.weightClas }}kg</span> 
+        </span>
+        <span class="font-bold">{{ item[k] }}</span>
       </li>
     </ul>
   </div>
