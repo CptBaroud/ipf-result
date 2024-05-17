@@ -1,13 +1,13 @@
 <template>
   <NuxtLink
-    class="z-10 flex flex-col xl:flex-row justify-between font-thunder rounded-xl text-white p-2 xl:p-4 bg-gradient-to-b xl:bg-gradient-to-r border-2"
+    class="z-10 flex flex-col xl:flex-row justify-between font-thunder rounded-xl text-custom-dark dark:text-white p-2 xl:p-4 bg-gradient-to-b xl:bg-gradient-to-r border-2"
     :class="bg"
     style="backdrop-filter: blur(6px)"
     :to="`/user/${uid}`"
   >
     <div class="flex flex-col gap-y-3 justify-between">
-      <span class="text-4xl xl:text-5xl font-bold uppercase ">
-        {{  Name }}
+      <span class="text-4xl xl:text-5xl font-bold uppercase">
+        {{ Name }}
       </span>
       <span class="capsizedText font-black">
         {{ TotalKg }}<span class="uppercase font-medium text-2xl">kg</span>
@@ -16,7 +16,7 @@
         class="text-3xl xl:text-4xl text-white/72 font-bold xl:font-extrabold -mb-2"
       >
         <span>-{{ WeightClassKg }}KG</span>
-        <span class="uppercase font-medium text-white text-xs xl:text-xl">{{
+        <span class="uppercase font-medium text-xs xl:text-xl">{{
           Division
         }}</span>
       </span>
@@ -60,12 +60,12 @@ const props = defineProps({
 
 // Moche mais ça marche
 const bgGradients = {
-  0: "from-gradient-dark/[.48] to-gradient-white/[.48] border-gradient-white",
-  1: "from-gradient-dark/[.48] to-gradient-blue/[.48] border-gradient-blue",
-  2: "from-gradient-dark/[.48] to-gradient-pink/[.48] border-gradient-pink",
-  3: "from-gradient-dark/[.48] to-gradient-orange/[.48] border-gradient-orange",
+  0: "from-gradient-white/[.48] to-gradient-dark/[.48] dark:from-gradient-dark/[.48] dark:to-gradient-white/[.48] dark:border-gradient-white border-gradient-dark",
+  1: "from-gradient-white/[.48] to-gradient-blue/[.48] dark:from-gradient-dark/[.48] dark:to-gradient-blue/[.48] border-gradient-blue",
+  2: "from-gradient-white/[.48] to-gradient-pink/[.48] dark:from-gradient-dark/[.48] dark:to-gradient-pink/[.48] border-gradient-pink",
+  3: "from-gradient-white/[.48] to-gradient-orange/[.48] dark:from-gradient-dark/[.48] dark:to-gradient-orange/[.48] border-gradient-orange",
   france:
-    "from-gradient-france-start/[.48] to-gradient-france-end/[.48] border-gradient-france-end",
+    "from-gradient-france-end/[.48] to-gradient-france-start/[.48] border-gradient-france-start dark:from-gradient-france-start/[.48]  dark:to-gradient-france-end/[.48] border-gradient-france-end",
 };
 
 const bg = computed(() => {
@@ -76,9 +76,7 @@ const bg = computed(() => {
   const random = Math.floor(Math.random() * 4);
   return bgGradients[random];
 });
-
 </script>
-
 
 <style scoped>
 .capsizedText {

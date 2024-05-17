@@ -1,7 +1,7 @@
 <template>
   <DecorationTextBg v-if="data" :text="`${data.title} - ${data.title}`" />
 
-  <section class="text-white w-full pt-16">
+  <section class="text-custom-dark dark:text-white w-full pt-16">
     <div class="container gap-y-16 flex-col items-start" v-if="data">
       <div class="w-max-content">
         <h1 class="text-6xl md:text-9xl uppercase font-black">{{ data.title }}</h1>

@@ -3,10 +3,10 @@
 
   <section class="w-full pt-16 pb-4">
     <div class="container flex flex-col items-start">
-      <h1 class="text-6xl md:text-9xl font-black">TOTAL</h1>
+      <h1 class="text-6xl md:text-9xl font-black text-black dark:text-white">TOTAL</h1>
       <input
         v-model="search"
-        class="py-3 px-6 my-8 w-full text-white rounded-xl border-2 foxus:border-gradient-blue bg-transparent border-gradient-white bg-gradient-to-r from-gradient-dark/40 to-gradient-white/40 z-20 font-display text-xl"
+        class="py-3 px-6 my-8 w-full text-custom-dark dark:text-white rounded-xl border-2 foxus:border-gradient-blue bg-transparent border-gradient-dark dark:border-gradient-white bg-gradient-to-r from-gradient-white/40 to-gradient-dark/40 dark:from-gradient-dark/40 dark:to-gradient-white/40 z-20 font-display text-xl"
         placeholder="Nom de l'athlète"
         style="backdrop-filter: blur(6px)"
       />

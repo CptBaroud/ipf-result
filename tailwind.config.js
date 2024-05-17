@@ -8,6 +8,7 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
   ],
+  darkMode: 'class',
   theme: {
     screens: {
       xxs: "320px",
@@ -19,7 +20,8 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Thunder, sans-serif"],
-      'display': ['Montserrat, sans-serif'],
+      // biome-ignore lint/complexity/useLiteralKeys: <explanation>
+      "display": ['Montserrat, sans-serif'],
     },
     extend: {
       rotate: {

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute z-0 -top-[10rem] -left-[45rem] text-white overflow-hidden overflow-y-hidden uppercase max-h-full"
+    class="absolute z-0 -top-[10rem] -left-[45rem] text-custom-dark dark:text-white overflow-hidden overflow-y-hidden uppercase max-h-full"
   >
     <p
       v-for="i in bgTextCount"

@@ -8,5 +8,15 @@ export default defineNuxtConfig({
     cssPath: "~/tailwind/index.css",
     exposeConfig: false,
   },
-  modules: ['@nuxtjs/tailwindcss', "@nuxt/content"]
+  colorMode: {
+    preference: 'dark', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    classPrefix: '',
+    classSuffix: '',
+    storageKey: 'nuxt-color-mode'
+  },
+  modules: ['@nuxtjs/tailwindcss', "@nuxt/content", "@nuxtjs/color-mode"]
 })
